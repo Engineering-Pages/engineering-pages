@@ -6,9 +6,11 @@ The reliability of recovery systems in high-power rocketry follows a peculiar st
 
 A properly designed backup recovery system should activate independently of the primary system, yet avoid interference during normal operation. The traditional approach of dual deployment using redundant altimeters presents its own challenges. When both altimeters are mounted on the same sled and share power sources, what appears as redundancy may actually introduce common failure modes.
 
+```
 [figure]
 The diagram shows three common backup configurations in cross-section. Configuration A depicts traditional dual altimeters on a single sled with separate battery holders and charge wells. Configuration B shows distributed redundancy with altimeters mounted on opposite sides of the payload bay and independent wiring channels. Configuration C illustrates the "distributed systems" approach with completely separate bays for primary and backup recovery components. Color coding indicates primary (blue) and backup (red) system components, with dashed lines showing wiring paths and solid lines showing structural elements.
 [/figure]
+```
 
 Field testing reveals that Configuration C, while requiring more space and weight, provides the highest reliability by eliminating shared failure points. However, this comes at the cost of increased complexity during assembly and pre-flight checks.
 
@@ -16,9 +18,11 @@ The concept of "graceful degradation" should guide backup system design. Rather 
 
 Recent developments in mechanical backup systems have shown promise. Spring-loaded deployment mechanisms triggered by mechanical timers or pressure diaphragms offer immunity to electrical failures. These systems, while less precise than electronic alternatives, provide a truly independent backup path that functions even during complete electrical system failure.
 
+```
 [figure]
 Graph showing recovery system reliability data across 1,500 flights. The x-axis shows altitude in 1,000-foot increments from 0 to 30,000 feet. The y-axis shows failure rate percentage from 0 to 5%. Three curves are plotted: single system (red), dual electronic (blue), and mechanical backup (green). Notable inflection points occur at the transonic region (around 10,000 feet) and at typical service ceiling for consumer barometric sensors (24,000 feet).
 [/figure]
+```
 
 The psychology of backup system design often leads rocketeers to focus on complex solutions when simplicity might serve better. A backup system that requires extensive pre-flight preparation or introduces multiple potential failure modes may actually reduce overall system reliability. The "Swiss Army Knife" approach - trying to handle every conceivable failure mode - frequently creates more problems than it solves.
 

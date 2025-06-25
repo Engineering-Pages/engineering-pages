@@ -4,9 +4,11 @@ Thermal management in payload bays presents unique challenges that often get ove
 
 During ascent, the primary heat source is aerodynamic heating of the airframe. At velocities above Mach 0.8, the stagnation temperature at the nose cone can exceed 150°F, while skin friction heating along the body tube typically generates temperatures between 100-120°F. This external heat conducts through the airframe and into the payload bay.
 
+```
 [figure]
 Graph showing temperature profiles over time during a typical high-power rocket flight. X-axis shows flight time from 0 to 300 seconds, Y-axis shows temperature from 0-200°F. Three curves are plotted: external skin temperature (red) peaks sharply during boost phase then declines, internal air temperature (blue) rises more gradually and maintains elevation longer, and electronic component temperature (green) shows the slowest rise but retains heat the longest. Dotted horizontal lines indicate critical temperature thresholds for common electronic components.
 [/figure]
+```
 
 Internal heat generation from electronic components compounds the problem. A typical payload stack containing an altimeter, GPS tracker, radio transmitter, and video system can generate 5-15 watts of heat. Without proper thermal management, this heat becomes trapped in the payload bay, potentially leading to sensor drift, battery performance degradation, or complete electronic failure.
 
@@ -27,9 +29,11 @@ Several practical solutions exist for managing payload bay temperatures:
 - Commercial PCM products rated for appropriate temperature ranges
 - Strategic placement near hot components
 
+```
 [figure]
 Cross-sectional diagram of a payload bay showing thermal management features. The cylindrical bay contains three horizontal mounting plates with components. Arrows indicate airflow patterns through vent holes. Callouts highlight thermal isolation mounts, PCM packet locations, and temperature sensor positions. Color gradient overlays demonstrate heat distribution patterns.
 [/figure]
+```
 
 Testing has shown that a combination of these methods is most effective. A typical arrangement might include:
 - Two 3/16" vent holes on opposite sides of the payload bay
@@ -41,8 +45,10 @@ For flights exceeding Mach 1, additional considerations become necessary. The sh
 
 Monitoring is crucial for validating thermal management systems. Small temperature sensors (like the DS18B20) can be integrated into the payload stack for data logging. This allows post-flight analysis of thermal system performance and provides valuable data for future improvements.
 
+```
 [figure]
 Multiple line graph showing test results from three different thermal management configurations. X-axis shows time over 4-hour period including pre-launch, flight, and recovery. Y-axis shows temperature from 0-250°F. Three datasets compare: basic venting only (red), venting with isolation (blue), and complete thermal management system (green). Annotations highlight key events like motor ignition, burnout, and recovery.
 [/figure]
+```
 
 The most successful thermal management systems are those that account for the entire flight profile, from pre-launch conditions through recovery. A payload bay sitting on the launch pad in direct sunlight can experience significant solar heating before flight even begins. Similarly, a touchdown in open terrain can expose equipment to sustained high temperatures during recovery operations.

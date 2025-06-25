@@ -6,9 +6,11 @@ A ballistic recovery occurs when a rocket's recovery system fails to deploy, cau
 
 The terminal velocity of a ballistically falling rocket typically ranges from 200-400 feet per second, depending on its mass and aerodynamic properties. This represents roughly 10-20 times the intended descent rate under parachute. At these velocities, most airframes will experience catastrophic structural failure upon impact.
 
+```
 [figure]
 Graph showing terminal velocity vs. mass for typical high-power rocket configurations. X-axis shows mass from 0-10kg, Y-axis shows velocity from 0-500 ft/s. Three curves represent different body diameter categories: 2.6", 4", and 6". Each curve demonstrates how terminal velocity increases with mass but begins to level off due to aerodynamic drag. Dotted horizontal line at 30 ft/s shows typical parachute descent rate for reference.
 [/figure]
+```
 
 The most common cause of ballistic recovery is ejection charge failure. This can result from:
 - Insufficient black powder charge
@@ -21,9 +23,11 @@ The most common cause of ballistic recovery is ejection charge failure. This can
 
 Modern electronic altimeters typically provide redundant charges, but this introduces its own complexity. The primary and backup charges must be carefully sized - too small and they fail to separate, too large and they can cause structural damage. The timing between charges is also critical.
 
+```
 [figure]
 Sequence of four high-speed camera images showing a typical ballistic failure progression. Frame 1 shows rocket at apogee with no deployment. Frame 2 captures onset of unstable descent. Frame 3 shows vehicle entering high-speed spin. Frame 4 demonstrates structural breakup at approximately 2000 feet AGL. Timeline markers indicate approximately 0.5 seconds between frames.
 [/figure]
+```
 
 Prevention strategies focus on several key areas:
 1. Ground testing of ejection charges
@@ -44,9 +48,11 @@ When a ballistic failure occurs, the post-flight investigation should examine:
 
 The "Swiss cheese model" of accident causation often applies - multiple safeguards must fail simultaneously for a ballistic recovery to occur. Understanding these failure chains helps prevent future occurrences.
 
+```
 [figure]
 Fault tree diagram showing common ballistic failure pathways. Top event "Ballistic Recovery" branches down through "Electronics Failure," "Mechanical Failure," and "Charge Failure" with subsequent branches showing contributing factors. Color coding indicates relative frequency of different failure modes based on NAR incident reporting data.
 [/figure]
+```
 
 Range safety considerations require careful thought about potential ballistic trajectories. The deployment failure mode should be considered when establishing minimum recovery system altitudes and keeping spectators behind appropriate safety barriers. Many clubs require dual deployment systems for flights above certain altitudes specifically to mitigate ballistic recovery risk.
 

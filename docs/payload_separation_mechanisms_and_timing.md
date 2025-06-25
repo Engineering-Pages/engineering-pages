@@ -6,17 +6,21 @@ The reliable separation of payload sections in sounding rockets represents one o
 
 Separation mechanisms broadly fall into four categories: pyrotechnic, mechanical spring, pneumatic, and electromagnetic. Each presents distinct advantages and failure modes that must be carefully considered against mission requirements. Pyrotechnic systems, while offering instantaneous actuation, introduce complexity through the need for redundant firing circuits and careful charge sizing. A common mistake is over-charging the separation charge, leading to structural damage and potential recovery system failures.
 
+```
 [figure]
 Cross-sectional diagram showing four common separation mechanism types arranged vertically. Top to bottom: (1) Pyrotechnic system with black powder charge and e-match, (2) Compression spring system with mechanical trigger, (3) Pneumatic system with pressure vessel and solenoid valve, (4) Electromagnetic system with permanent magnets and electromagnetic coil. Each system includes key components labeled and approximate dimensions. Arrows indicate direction of force application and separation path. Critical clearances and safety mechanisms are highlighted in red.
 [/figure]
+```
 
 The timing of separation events proves equally crucial. For atmospheric sampling missions, premature separation can contaminate readings, while delayed separation may miss the target altitude window. Testing reveals that mechanical spring systems typically require 50-75 milliseconds from trigger signal to full separation, while pyrotechnic systems achieve separation in under 10 milliseconds. This timing difference becomes critical when designing sequential events like staging or recovery deployment.
 
 A reliable separation system requires three key elements: positive retention before separation, clean separation when actuated, and prevention of re-contact after separation. The retention force must exceed the maximum expected flight loads by a factor of at least 2.5. Testing shows that a minimum of 15 pounds of retention force per square inch of body tube cross-section provides adequate safety margin for most subsonic flights.
 
+```
 [figure]
 Graph showing separation timing characteristics for different mechanism types. X-axis shows time in milliseconds from trigger signal (0-200ms). Y-axis shows separation distance in inches (0-12"). Four colored lines represent different mechanism types, with pyrotechnic showing steepest initial slope, followed by spring, pneumatic, and electromagnetic. Overlaid bands indicate typical altitude loss during separation event for each method.
 [/figure]
+```
 
 Environmental factors significantly impact separation reliability. Temperature cycling can affect pyrotechnic charge performance, while moisture can degrade spring constants or cause pneumatic seals to swell. Successful designs incorporate redundancy in critical components and environmental sealing. The use of dual retention pins, redundant power sources, and sealed bearing surfaces has shown to increase reliability by approximately 300% in field testing.
 

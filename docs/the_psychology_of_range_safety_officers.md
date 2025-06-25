@@ -6,17 +6,21 @@ Range Safety Officers (RSOs) occupy a unique position in the rocketry community,
 
 Studies of RSO behavior across multiple launch sites reveal consistent patterns in how they evaluate flight readiness. Most notably, experienced RSOs develop what's often called "launch intuition" - a rapid assessment capability that integrates multiple risk factors simultaneously. This manifests in their ability to spot potential issues that newer rocketeers might miss, such as subtle signs of motor casing stress or recovery system inconsistencies.
 
+```
 [figure]
 The graph shows RSO rejection rates plotted against rocketeer experience levels. The x-axis represents years of rocketry experience (0-20), while the y-axis shows rejection percentage (0-100%). Three curves are displayed: Novice RSOs (blue), Experienced RSOs (red), and Expert RSOs (green). The novice curve shows high variability and higher overall rejection rates. The experienced curve demonstrates more consistent judgment but maintains moderate rejection rates. The expert curve shows the lowest rejection rates for experienced rocketeers but maintains high standards for novices, indicating refined risk assessment abilities.
 [/figure]
+```
 
 The psychological profile of effective RSOs typically includes several key characteristics. First is the ability to maintain emotional equilibrium under pressure, particularly when dealing with eager rocketeers who may have invested significant time and resources into their projects. Second is the capacity to make rapid, binary decisions while considering multiple variables. Third is the ability to communicate technical concerns clearly and authoritatively without becoming confrontational.
 
 A fascinating aspect of RSO psychology is their development of "risk windows" - mental frameworks that adjust based on launch conditions, rocket complexity, and rocketeer experience. These windows aren't static; they dynamically shift based on environmental conditions and cumulative launch day experiences. For instance, an RSO's risk tolerance typically decreases as the day progresses, particularly after witnessing close calls or recovery failures.
 
+```
 [figure]
 This diagram illustrates the "RSO Risk Assessment Matrix." It's a 4x4 grid with axes for "Technical Complexity" (x) and "Environmental Conditions" (y). Each cell contains color-coded zones (green, yellow, red) representing typical RSO approval likelihood. Overlaid arrows indicate how the acceptance thresholds shift throughout a launch day, generally becoming more conservative. Additional notation shows how different RSO experience levels interpret the same scenarios differently.
 [/figure]
+```
 
 The most effective RSOs demonstrate what's known as "constructive conservatism" - the ability to reject launches while simultaneously educating rocketeers about specific improvements needed. This approach helps maintain safety standards while fostering community growth and knowledge transfer. It's particularly evident in how they handle first-time certification attempts, where the psychological impact of their decisions can significantly influence a rocketeer's long-term involvement in the hobby.
 

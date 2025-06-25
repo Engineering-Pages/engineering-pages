@@ -6,9 +6,11 @@ The evolution of amateur rocketry telemetry systems has followed a fascinating p
 
 A basic telemetry system consists of four primary components: sensors, a microcontroller, a radio transmitter, and a ground station. While commercial off-the-shelf solutions exist, many rocketeers build custom systems to reduce costs and gain deeper understanding of the technology. The most common frequency bands are 433 MHz and 915 MHz, offering good range and reasonable antenna sizes.
 
+```
 [figure]
 The diagram shows a typical telemetry system architecture with three main sections. The top section represents the airborne package, showing sensor inputs (accelerometer, barometer, GPS, thermocouples) feeding into a microcontroller (typically Arduino or STM32), which connects to a radio transmitter. The middle section shows the RF path with signal strength dropping over distance. The bottom section depicts the ground station with a directional antenna, receiver module, laptop running visualization software, and real-time plotting of flight parameters. Signal strength indicators and packet loss statistics are shown in the corner displays.
 [/figure]
+```
 
 One of the most challenging aspects of rocket telemetry is maintaining reliable communication through various flight phases. Signal strength typically follows a predictable pattern during ascent, but can become erratic during events like motor burnout, staging, or recovery deployment. Clever antenna placement and orientation can help mitigate these issues. Many successful designs place the antenna in the nose cone or along the rocket's length, with careful consideration for RF ground plane requirements.
 
@@ -23,9 +25,11 @@ Data packet design requires careful balance between transmission frequency and i
 
 Sending this 31-byte packet 10 times per second provides good temporal resolution while staying within the bandwidth constraints of most amateur radio systems. However, near-sonic and supersonic flights often require higher sampling rates, particularly for acceleration data.
 
+```
 [figure]
 This plot shows telemetry reception quality versus flight time for a typical M-class flight. The y-axis represents packet reception rate (0-100%), while the x-axis shows flight time in seconds. The blue line shows actual data reception, dropping notably at motor burnout (T+3.2s), maintaining steady reception through coast phase, showing interference during drogue deployment (T+15.8s), and recovering during descent. A red reference line at 95% indicates desired minimum reception rate. Annotations highlight key flight events and their impact on signal quality.
 [/figure]
+```
 
 Ground station design proves equally important as the airborne package. Directional antennas with manual or automated tracking significantly extend useful range. Many rocketeers employ diversity reception with multiple antennas to improve reliability. Modern software-defined radio (SDR) receivers offer sophisticated features like automatic frequency correction and digital filtering, helping maintain lock on weak signals.
 

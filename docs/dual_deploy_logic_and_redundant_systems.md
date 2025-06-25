@@ -6,9 +6,11 @@ The evolution of high-power rocketry has demonstrated that single-deployment rec
 
 Dual deployment solves this dilemma by using two distinct recovery events: a small drogue parachute deployed at apogee for initial descent, followed by main parachute deployment at a lower altitude (typically 500-1000 feet). This approach has become standard practice, but introduces new failure modes that must be addressed through redundancy.
 
+```
 [figure]
 Diagram showing typical dual-deployment altitude profile with three curves: No deployment (ballistic), drogue-only, and successful dual deployment. X-axis shows time from launch in seconds, Y-axis shows altitude in feet. Ballistic curve shows steep descent, drogue-only shows moderate descent rate (~100 ft/sec), and dual-deploy shows clear "knee" where main deployment occurs at 800 ft, transitioning to gentle final descent (~15 ft/sec). Key altitudes and descent rates labeled at critical points.
 [/figure]
+```
 
 The primary failure modes in dual deployment systems include:
 
@@ -28,9 +30,11 @@ A robust dual-deploy system typically employs:
 - Separate arming switches
 - Isolated mounting systems
 
+```
 [figure]
 Cross-sectional diagram of electronic bay showing recommended redundant system layout. Two altimeters mounted on opposite sides of sled, separate battery holders, isolated static ports, and four charge wells (two for drogue, two for main). Wiring harness shown with clear separation between primary and backup systems. Key components labeled and typical dimensions indicated.
 [/figure]
+```
 
 The logic controlling deployment must account for various flight scenarios. Modern altimeters use sophisticated algorithms that consider:
 
@@ -49,9 +53,11 @@ Testing redundant systems presents unique challenges. While ground testing can v
 - Drop testing complete electronic bays
 - Data logging during test flights
 
+```
 [figure]
 Time-series plot showing altimeter response during vacuum chamber test. Four curves show primary and backup sensor readings during simulated flight profile. Annotations highlight where artificial noise was introduced to test filtering algorithms. Clear correlation between primary/backup readings demonstrates proper independent operation.
 [/figure]
+```
 
 The cost of redundancy extends beyond additional hardware. Extra weight impacts altitude performance, while larger electronic bays increase drag. However, experience has shown these penalties are far outweighed by improved reliability. Statistical analysis of flight data from major launches shows dual-deploy systems with proper redundancy achieve successful recovery rates exceeding 98%, compared to 85-90% for single-deploy systems.
 

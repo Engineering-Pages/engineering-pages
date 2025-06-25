@@ -6,9 +6,11 @@ The control of payload rotation and attitude in sounding rockets presents unique
 
 Payload spinning serves multiple purposes in sounding rocket flights. Primary among these is the gyroscopic stabilization effect, which helps maintain the rocket's trajectory through potential wind disturbances and motor impulse variations. However, excessive spin rates can interfere with certain experimental payloads, particularly those involving cameras or sensitive instruments.
 
+```
 [figure]
 Graph showing relationship between spin rate and altitude for three different payload masses (2kg, 4kg, 6kg). X-axis shows spin rate from 0-10 rps, Y-axis shows maximum altitude in feet. Three curves demonstrate how heavier payloads require higher spin rates for optimal stability, but also show sharp dropoff in altitude performance beyond optimal spin rates. Notable inflection points occur around 3-4 rps for 2kg, 4-5 rps for 4kg, and 5-6 rps for 6kg payloads. Shaded regions indicate zones of potential instability.
 [/figure]
+```
 
 The most common method of inducing payload spin involves canted fins or small tabs on the payload section itself. The angle of these surfaces typically ranges from 1-3 degrees, with larger angles producing faster rotation but also greater drag penalties. A practical approach is to start with 1-degree cants and conduct flight tests with accelerometers to measure actual rotation rates.
 
@@ -18,9 +20,11 @@ Active attitude control systems, while more complex, offer superior performance 
 - Small servo-actuated fins or gas thrusters
 - Battery power source
 
+```
 [figure]
 Cutaway diagram of typical active control system installation in payload section. Shows cylindrical payload bay with gyroscope mounted centrally, control board adjacent, battery pack, and four equally-spaced servo mechanisms connected to external control surfaces. Annotations indicate key components and typical dimensions for 4-inch diameter rocket body.
 [/figure]
+```
 
 The selection between passive and active systems depends heavily on mission requirements. For basic atmospheric sampling or photography missions, passive stabilization through proper fin design and spin rate control is usually sufficient. However, missions requiring precise pointing or spin rate management benefit from active systems, despite their added complexity.
 
@@ -37,8 +41,10 @@ Common failure modes include:
 - Control surface flutter at high velocities
 - Electronic interference with other payload systems
 
+```
 [figure]
 Time-series plot showing typical flight data from successful attitude control implementation. Three traces show roll rate (degrees/sec), pitch angle (degrees), and control surface deflection (degrees) versus flight time. Notable features include initial spin-up during boost, stabilization period post-burnout, and controlled descent phase. Annotations highlight key flight events and control system responses.
 [/figure]
+```
 
 Future developments in amateur rocketry attitude control systems point toward integration of MEMS sensors and sophisticated control algorithms. However, the fundamental principles of maintaining simplicity, redundancy, and thorough testing remain essential for successful implementations.

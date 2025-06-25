@@ -6,9 +6,11 @@ The ability to predict where a rocket will land is crucial for both safety and r
 
 Wind drift during descent represents the most significant factor affecting landing location. A rocket's descent can be divided into two primary phases: the initial high-velocity descent before main parachute deployment, and the slower main parachute descent phase. Each phase experiences different wind effects and requires separate calculation approaches.
 
+```
 [figure]
 A split graph showing two descent phases. The top portion displays a steep ballistic curve with minimal drift during the drogue phase (red), while the bottom shows a shallower descent curve under main parachute (blue) with significant horizontal displacement. Wind vectors are represented as horizontal arrows of varying lengths at different altitudes. A grid overlay allows estimation of drift distances. The intersection of descent path with ground level is marked with predicted landing zones showing uncertainty ellipses that grow larger with increasing wind speed.
 [/figure]
+```
 
 For initial calculations, the "400-foot rule" provides a useful approximation: a rocket descending under a typical main parachute (10-15 fps descent rate) will drift approximately 400 feet horizontally for every 1000 feet of altitude in a 10 mph wind. This relationship is nearly linear, allowing quick field calculations. However, actual drift distances can vary significantly based on parachute size and design.
 
@@ -18,9 +20,11 @@ V(h) = V₀(h/h₀)^α
 
 where V₀ is the surface wind speed, h is the altitude, h₀ is a reference height (usually 10 meters), and α is the wind shear exponent (typically 0.14 for open terrain).
 
+```
 [figure]
 Three-dimensional plot showing wind profiles at different altitudes. The x and y axes represent geographic coordinates, while the z-axis shows altitude. Colored bands indicate wind speed ranges. Multiple descent trajectories are plotted, starting from the same apogee point but experiencing different wind conditions, resulting in a scattered pattern of landing points. The landing point distribution forms an elongated ellipse oriented along the prevailing wind direction.
 [/figure]
+```
 
 Modern flight computers can integrate these calculations in real-time, but understanding the underlying principles remains valuable for pre-flight planning and backup calculations. The total drift distance can be approximated by breaking the descent into altitude bands and summing the drift in each band:
 

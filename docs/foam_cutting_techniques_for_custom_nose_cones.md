@@ -6,9 +6,11 @@ The ability to create custom nose cones represents a critical skill in experimen
 
 The foundation of precision foam cutting lies in the hot-wire technique, where an electrically heated Nichrome or stainless steel wire, typically 0.020-0.032 inches in diameter, cuts through foam by melting it. The resistance of the wire, combined with current from a variable power supply, generates temperatures between 250-350°F - sufficient to cleanly cut through most foam densities while avoiding excessive melting or toxic fume generation.
 
+```
 [figure]
 Diagram showing a typical foam cutting setup with four main components: (1) A vertical support frame with calibrated mounting points for template attachment, (2) A tensioned cutting wire running between adjustable arms, (3) A variable power supply with voltage/current display, and (4) A rotating mandrel system for creating symmetrical profiles. The setup includes dimensional markings showing typical spacing and angles, with a detail view of the wire tensioning mechanism and electrical connections.
 [/figure]
+```
 
 The selection of foam material significantly impacts cutting quality. While expanded polystyrene (EPS) remains popular due to its low cost, extruded polystyrene (XPS) provides superior surface finish and dimensional stability. High-density polyurethane foams offer the best structural properties but require higher cutting temperatures and slower feed rates. The following density ranges have proven optimal for different applications:
 
@@ -18,9 +20,11 @@ The selection of foam material significantly impacts cutting quality. While expa
 
 Template design represents another crucial aspect of the process. Computer-generated profiles, printed at 1:1 scale and transferred to rigid material like aircraft plywood, ensure accuracy and repeatability. The template should account for wire kerf (typically 0.040-0.060 inches) and include registration marks for proper alignment.
 
+```
 [figure]
 Cross-sectional drawing showing three common nose cone profiles (conical, ogive, and elliptical) with dimensional relationships and key geometric points marked. Each profile includes a table of coordinates for plotting the curve, wire temperature recommendations, and feed rate guidelines. The drawing also shows how template offset compensates for wire kerf at different points along the profile.
 [/figure]
+```
 
 Feed rate control proves essential for achieving consistent results. Slower rates (1-2 inches per minute) produce smoother surfaces but risk overheating and material deformation. Faster rates (4-6 inches per minute) maintain better dimensional accuracy but may leave striations requiring additional finishing. The optimal approach involves varying the feed rate based on local geometry - slower around tight curves and faster along straight sections.
 

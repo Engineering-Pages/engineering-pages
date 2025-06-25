@@ -6,17 +6,21 @@ The development of reliable launch controllers represents one of the most critic
 
 The fundamental architecture of a launch controller consists of three main subsystems: the power supply, the control logic, and the firing circuit. Traditional designs relied on simple mechanical switches in series, but modern controllers benefit from redundant electronic safeguards. A typical safety-conscious design incorporates at least four independent interlocks: arm key switch, safety key switch, continuity verification, and launch button with mechanical guard.
 
+```
 [figure]
 Schematic diagram showing a dual-redundant launch controller circuit. The top half shows the safety interlock chain including key switches and continuity check circuit, while the bottom shows the high-current firing circuit with relay isolation. Key components are color-coded: red for high-current paths, blue for logic-level signals, and green for status indicators. Mechanical switches are shown with guard symbols, and opto-isolators separate logic from power circuits. A detailed timing diagram below demonstrates the required sequence of events for successful launch authorization.
 [/figure]
+```
 
 The power supply design presents unique challenges. While 12V automotive batteries remain popular, their high current capability can present safety risks. A better approach uses current-limited supplies with fault detection. The optimal firing current depends on the igniter type - standard hobby igniters typically require 3-5A, while research motors may need 10A or more. The power circuit should incorporate both slow-blow fuses and fast-acting electronic current limiting.
 
 Continuity checking requires careful design to prevent premature ignition. Many early controllers used simple ohmmeters, but these can deliver enough current to fire sensitive igniters. Modern designs use pulsed current limiting with typical test currents under 1mA. The continuity threshold should account for both igniter resistance (typically 0.5-2Ω) and wiring losses.
 
+```
 [figure]
 Oscilloscope capture showing proper continuity check waveforms. The upper trace shows the pulsed test current (1ms pulses at 10Hz), while the lower trace shows the measured voltage across a 1Ω test load. Cursor measurements indicate peak current below 0.8mA, ensuring safe operation with sensitive igniters. The right side shows fault detection response when continuity is lost.
 [/figure]
+```
 
 Physical construction demands equal attention to safety. All high-current paths should use proper gauge wire (typically 14AWG or larger), with strain relief and abrasion protection. Switches must be rated for the maximum possible fault current, not just the nominal firing current. Weather resistance is essential - many controllers fail due to moisture infiltration rather than electrical issues.
 

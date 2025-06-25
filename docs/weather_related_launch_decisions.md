@@ -6,17 +6,21 @@ The relationship between weather conditions and successful rocket launches repre
 
 Wind conditions create the most immediate concern for launch decisions. Surface winds affect rail departure dynamics, while winds aloft influence recovery operations. A comprehensive analysis of 1,500 high-power rocket flights reveals that surface winds below 10 mph result in a 95% success rate for rail departure, dropping to 72% between 10-15 mph, and below 40% for winds exceeding 15 mph.
 
+```
 [figure]
 Graph showing launch success rates vs surface wind speed from 0-20 mph. X-axis shows wind speed in 5 mph increments, Y-axis shows percentage of successful launches from 0-100%. Three colored lines represent different rocket weight classes: under 5 lbs (blue), 5-15 lbs (green), and over 15 lbs (red). All lines show steep decline after 10 mph, with heavier rockets maintaining higher success rates in stronger winds. Dotted vertical line at 15 mph indicates typical "no-go" threshold for most launches.
 [/figure]
+```
 
 The wind profile through the flight envelope demands equal attention. Traditional wisdom suggesting "if you can see the clouds, you can fly to them" proves dangerously simplistic. Modern wind mapping tools like radiosondes and wind weight calculations provide crucial data for predicting drift patterns. The "60% rule" - allowing drift up to 60% of the expected altitude - offers a practical guideline for setting field boundaries, though this assumes uniform wind direction through the altitude profile.
 
 Temperature affects motor performance significantly. Ammonium perchlorate composite propellant (APCP) motors show approximately 1.2% thrust variation per 10°F deviation from their 70°F baseline. More critically, temperature cycling can create separation between the propellant grain and motor casing, leading to catastrophic failure modes.
 
+```
 [figure]
 Scatter plot showing relationship between ambient temperature and motor performance. X-axis shows temperature from 20-100°F, Y-axis shows percentage deviation from rated thrust. Data points from actual flight records cluster around a linear trend line with clear positive correlation. Secondary Y-axis shows failure rate increasing sharply below 40°F and above 90°F. Shaded green region indicates optimal temperature range.
 [/figure]
+```
 
 Humidity impacts both electronic systems and recovery components. Electronic altimeters typically maintain accuracy up to 95% relative humidity, but condensation on circuit boards during descent can trigger false readings or premature ejection events. Recovery systems face different challenges - Kevlar and nylon shock cords can absorb up to 3.5% of their weight in moisture, significantly affecting their elastic properties and breaking strength.
 

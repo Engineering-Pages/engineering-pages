@@ -6,9 +6,11 @@ Image segmentation stands as one of computer vision's fundamental challenges, an
 
 The core idea seems deceptively simple: divide an image into meaningful regions while preserving important edges. But implementing this in real-world applications exposes several practical challenges that every vision engineer must navigate.
 
+```
 [figure]
 A comparison of four approaches to minimizing the Mumford-Shah functional on a natural image. The top row shows the original image and its ground truth segmentation. The bottom row demonstrates three different approximation methods: (left) a level set implementation showing evolving contours in red, (middle) a graph-cut based approach with region boundaries highlighted in blue, and (right) a deep learning approximation using a U-Net architecture. The progression illustrates how different numerical schemes handle the same segmentation task, with varying degrees of boundary preservation and computational efficiency.
 [/figure]
+```
 
 The first major challenge comes from the functional's non-convex nature. While mathematically elegant, this property makes finding the global minimum computationally intractable for practical image sizes. Engineers typically resort to approximations, each with its own trade-offs.
 
@@ -16,9 +18,11 @@ The level set method, popular in the early 2000s, offers precise boundary evolut
 
 Graph-cut based approximations emerged as a faster alternative, trading mathematical accuracy for computational efficiency. These methods can process megapixel images in seconds rather than minutes, making them suitable for real-time applications. The trick lies in clever graph construction - using 8-connectivity rather than 4-connectivity often improves results while only marginally increasing computation time.
 
+```
 [figure]
 Convergence rates for different minimization strategies on a standard test image. The x-axis shows iteration count (0-1000), while the y-axis displays energy value (0-100). Four curves are plotted: level sets (blue), graph cuts (red), convex relaxation (green), and deep learning approximation (purple). The deep learning approach shows fastest initial convergence but plateaus higher than traditional methods, while level sets achieve lowest final energy but take longest to converge.
 [/figure]
+```
 
 Recent approaches leverage deep learning to approximate the minimization process. While these methods don't strictly minimize the functional, they can produce visually comparable results orders of magnitude faster. The key engineering insight here involves careful dataset curation - training on synthetic images with known ground truth segmentations before fine-tuning on real data significantly improves robustness.
 
@@ -30,6 +34,8 @@ The choice of numerical scheme dramatically affects the final result. Explicit s
 
 Despite these challenges, the Mumford-Shah functional remains relevant in modern computer vision systems. Its mathematical foundation provides a solid framework for understanding image segmentation, while its practical implementation continues to drive innovations in numerical methods and optimization techniques. The key to successful deployment lies in understanding these engineering trade-offs and choosing appropriate approximations for specific application requirements.
 
+```
 [figure]
 Visualization of memory usage and processing time trade-offs across different implementation strategies. A scatter plot shows memory footprint (MB) on x-axis (0-1000) versus processing time (ms) on y-axis (0-500) for various approaches. Points are color-coded by implementation type and sized by segmentation accuracy. Arrows indicate the evolution of each approach over successive software versions, demonstrating how engineering optimizations have pushed toward the bottom-left corner of the plot (low memory, fast processing).
 [/figure]
+```

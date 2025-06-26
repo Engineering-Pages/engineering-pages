@@ -11,6 +11,7 @@ In the United States, federal law permits amateur motor building under specific 
 A comparative analysis of amateur motor building regulations across different countries. The chart uses a grid layout with countries on the y-axis and key regulatory aspects on the x-axis (permits required, maximum propellant mass allowed, storage requirements, manufacturing restrictions). Color coding indicates restriction levels: green for permissive, yellow for moderate restrictions, red for highly restricted or prohibited. Notable outliers like Australia (extremely restrictive) and New Zealand (relatively permissive) are highlighted with annotations explaining key policy differences.
 [/figure]
 ```
+```
 
 Beyond legal requirements, successful motor building demands precise manufacturing techniques. The propellant grain geometry significantly affects the thrust curve, and even minor inconsistencies can lead to catastrophic failures. Standard grain configurations include BATES (Ballistic Test and Evaluation System), moonburner, and end-burning designs, each offering different performance characteristics.
 
@@ -21,6 +22,7 @@ Propellant formulation presents another critical challenge. The classic amateur 
 Cross-sectional diagrams showing four common amateur motor configurations: simple tube grain, BATES grain, moonburner, and end-burning designs. Each illustration includes dimensional relationships, expected pressure vessel requirements, and typical thrust curve characteristics. Annotations highlight critical design features affecting burn characteristics and structural integrity. A sidebar shows common failure modes associated with each design.
 [/figure]
 ```
+```
 
 Safety considerations extend beyond propellant handling. Motor case design must account for operating pressures typically ranging from 300 to 800 PSI. Aluminum tubes, while readily available, require careful evaluation of wall thickness and material properties. Static testing becomes mandatory, with proper test stands and remote firing systems essential for data collection and safety.
 
@@ -30,6 +32,7 @@ The development process typically begins with small motors (H-class or below) wh
 [figure]
 Time-series data from static motor tests showing pressure vs. time curves for three iterations of the same motor design. The graph highlights common amateur motor development issues: casing rupture points, pressure spikes from grain defects, and irregular burn patterns. Overlaid reference lines indicate design pressure limits and target performance envelope. Annotations point out specific manufacturing improvements made between iterations.
 [/figure]
+```
 ```
 
 Modern approaches incorporate computer modeling to predict performance before physical testing. Programs like OpenMotor and BurnSim provide reasonable approximations of thrust curves and chamber pressures, though real-world testing remains essential for validation. The gap between predicted and actual performance often reveals subtle aspects of motor design that theoretical models miss.

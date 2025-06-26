@@ -6,17 +6,21 @@ The counterintuitive nature of computer vision becomes apparent when we examine 
 
 Consider a basic edge detection task. Humans instantly identify object boundaries even in cluttered scenes, yet the pixel-level reality presents a different challenge. A simple 100x100 pixel image contains 10,000 intensity values, each potentially contributing to an edge. The computational system must examine local intensity gradients, determine orientation, and decide edge presence without the benefit of high-level understanding.
 
+```
 [figure]
 A side-by-side comparison showing three versions of the same scene: the original image, its pixel intensity representation as a 3D surface plot, and detected edges. The surface plot reveals how what appears as a simple object boundary to humans manifests as complex intensity variations in pixel space. Sharp transitions that humans readily identify as edges become gradient mountains and valleys in the intensity landscape, with numerous local variations complicating automated detection.
 [/figure]
+```
 
 This pixel-space complexity extends beyond edges. Take the task of tracking a moving object. While a human child can follow a bouncing ball without conscious effort, the pixel-level implementation must contend with frame-to-frame correspondence, occlusion handling, and distinguishing object motion from camera motion. Each frame brings a new set of intensity values that must be matched and interpreted without the benefit of semantic understanding.
 
 The paradox becomes particularly evident in texture analysis. Humans effortlessly distinguish between grass, wood, and fabric textures, but in pixel space, these become complex statistical patterns. Local binary patterns, Gabor filters, and other texture descriptors attempt to capture what humans process unconsciously, yet often fall short of human-level robustness.
 
+```
 [figure]
 Three texture patches (grass, wood, fabric) shown alongside their corresponding local binary pattern representations and intensity histograms. The visualization demonstrates how visually distinct textures that humans easily differentiate become surprisingly similar in their statistical measurements, highlighting the challenge of developing robust texture descriptors in pixel space.
 [/figure]
+```
 
 Implementation attempts to solve these problems often reveal the gap between human and machine perception. Consider template matching - a seemingly straightforward approach to object detection. While humans naturally account for variations in lighting, pose, and scale, the pixel-space implementation must explicitly handle each variation. A simple 10% change in illumination can drastically alter pixel values while leaving human perception unchanged.
 

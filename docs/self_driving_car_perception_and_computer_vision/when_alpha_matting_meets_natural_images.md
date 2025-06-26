@@ -6,9 +6,11 @@ Alpha matting, the process of extracting a foreground object from an image along
 
 The core difficulty stems from the inherent ambiguity in natural image formation. When a semi-transparent foreground object is photographed against a background, each pixel's color is a complex mixture of foreground, background, and various optical phenomena. The classical compositing equation I = αF + (1-α)B, while mathematically elegant, drastically oversimplifies the reality of natural image formation.
 
+```
 [figure]
 A 2x3 grid showing the alpha matting problem in natural images. Top row shows three input images: a dandelion against sky, translucent leaves in sunlight, and hair strands against complex background. Bottom row shows corresponding alpha matte attempts, with bright pixels indicating high opacity and dark pixels showing transparency. Notable artifacts visible include: binary-looking transitions in the dandelion seed edges, incorrect transparency estimation in sun-lit leaf regions, and noisy alpha values in fine hair structures.
 [/figure]
+```
 
 Consider a seemingly straightforward case - extracting a dandelion seed head from a blue sky background. The wispy, semi-transparent seeds create intricate patterns where determining the true alpha values becomes extremely challenging. The seeds themselves exhibit varying degrees of transparency, while their edges diffract and scatter light in ways that violate the simple linear compositing model.
 
@@ -16,9 +18,11 @@ The problem compounds further when dealing with natural phenomena like motion bl
 
 Modern approaches attempt to tackle these challenges through increasingly sophisticated methods. Propagation-based algorithms leverage the observation that nearby pixels with similar colors likely share similar alpha values. Deep learning models try to learn complex natural image statistics from large datasets. Yet both approaches still struggle with fundamental ambiguities.
 
+```
 [figure]
 Three pairs of images demonstrating common failure modes in natural image matting. Each pair shows input image and corresponding error visualization. First pair: color ambiguity where foreground/background colors are too similar. Second pair: complex transparency patterns in translucent objects. Third pair: mixed pixel effects at boundaries where discrete pixel grid cannot capture continuous transparency variations.
 [/figure]
+```
 
 The trimap, a rough three-way segmentation indicating definite foreground, definite background, and uncertain regions, has long served as a crutch for matting algorithms. But requiring user input fundamentally limits applications in automated vision systems. Recent attempts at trimap-free matting show promise but remain brittle when confronted with natural image complexity.
 

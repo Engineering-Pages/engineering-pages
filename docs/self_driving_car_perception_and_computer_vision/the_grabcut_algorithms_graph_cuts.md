@@ -6,9 +6,11 @@ Image segmentation remains one of computer vision's most fundamental challenges,
 
 The algorithm begins with a user-drawn rectangle around an object of interest. This minimal input proves surprisingly powerful, as it automatically labels pixels outside the rectangle as definite background. The magic happens in how GrabCut handles the ambiguous pixels inside the rectangle through an iterative process of estimation and refinement.
 
+```
 [figure]
 The diagram shows a 2D grid of pixels with overlaid graph structure. Pixels are represented as nodes connected by edges, with edge weights shown in varying thicknesses. Two special nodes labeled 'S' (source/foreground) and 'T' (sink/background) are connected to all pixel nodes. The rectangular user input is shown as a dashed line encompassing a subset of pixels. Edge weights between neighboring pixels are represented by line thickness, while connections to S and T nodes use color intensity to show probability strengths. A "min-cut" line shows where the graph is ultimately separated into foreground and background regions.
 [/figure]
+```
 
 What makes GrabCut particularly fascinating is its use of Gaussian Mixture Models (GMMs) to model color distributions. Instead of treating colors as independent values, it builds probabilistic models of both foreground and background. Each pixel gets assigned to the most likely GMM component, creating a sophisticated color model that can handle complex, multi-modal distributions.
 
@@ -16,9 +18,11 @@ The graph construction itself is where engineering elegance meets theoretical ri
 
 The min-cut/max-flow algorithm then finds the optimal cut through this graph, effectively separating foreground from background. What's remarkable is how this discrete optimization problem, which would be intractable through brute force, becomes computationally feasible through graph theory.
 
+```
 [figure]
 A sequence of four images showing GrabCut iteration steps. The leftmost shows initial rectangular input, followed by GMM assignment visualization (color-coded clusters), then the graph cut result, and finally the refined segmentation after user touches. Each image includes a small inset showing the corresponding GMM color distributions as 3D scatter plots in RGB space.
 [/figure]
+```
 
 In practice, GrabCut's implementation reveals several engineering challenges. The memory requirements for the graph structure grow quadratically with image size, necessitating careful memory management or tiled processing for large images. The GMM fitting process can sometimes get stuck in local minima, requiring multiple random initializations. And the graph cut optimization, while polynomial-time, still needs efficient implementation to maintain interactive speeds.
 

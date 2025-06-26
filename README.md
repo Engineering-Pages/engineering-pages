@@ -21,6 +21,17 @@ source ~/.zshrc
 gem install bundler jekyll
 ```
 
+## Setup docs/ as a Jekyll project
+```
+cd docs
+
+# Create a Gemfile if you don't have one
+echo 'source "https://rubygems.org"' > Gemfile
+echo 'gem "github-pages", group: :jekyll_plugins' >> Gemfile
+
+bundle install
+```
+
 ## Run
 ```
 bundle exec jekyll serve
